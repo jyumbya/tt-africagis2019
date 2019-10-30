@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Targeting Tools version 1.0</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="John Mutua &amp; An Notenbaert" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/fc.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Targeting Tools version 1.0
+### John Mutua &amp; An Notenbaert
+### 30 October, 2019
+
+---
+
+
+
+
+# Background
+
+--
+
+- Site-specific crop management is the fundamental basis for sustainable intensification of crop and livestock production.
+
+---
+
+# Heterogeneity of agricultural systems
+
+--
+
+- Bio-physical
+
+--
+
+- Socio-economic
+
+--
+
+.center[
+
+![](pic0.png)
+
+]
+
+--
+
+- Influences suitability and adoption of interventions
+
+- Also influences impacts -when adopted and out-scaled
+
+---
+
+# What you need to know
+
+.pull-left[
+
+- Runs on Python
+
+  -Targeting toolbox is an ArcGIS toolbox (.pyt) purely developed using Python programming language, ArcPy library.
+
+- Toolbox tools
+
+  - It is made of three tools; *Land Suitability*, *Land Similarity* and *Land Statistics* tool.
+
+- Land Suitability Tool
+
+  - Matches suitability criteria with a spatial database. *Suitability maps*: areas where a specific strategy is likely to have a positive impact.
+
+]
+
+.pull-right[
+
+- Land Similarity Tool
+  
+  - Estimates the potential for out-scaling using socio-ecological characterization and similarity analysis. *Similarity maps*: indicating the wider applicability of the intervention.
+
+- Land Statistics Tool
+
+  - Calculates zonal statistics, e.g. total area/mean covered by human and/or livestock population....,*Output table*: Statistics per suitability/similarity class.
+  
+]
+
+---
+
+# Get Tools
+
+- Depending on your needs and requirements you can use the tools in these platforms.
+
+.center[
+
+![](pic4.png)
+
+]
+
+---
+
+# Land suitability
+
+.pull-left[
+
+![](pic5.png)
+
+]
+
+.pull-right[
+
+- Combining suitability maps
+
+- For binary output:
+    - min value = optimal from 
+    - optimal to = max value
+    
+- For gradient:
+    - min value &lt; optimal from 
+    - optimal to &gt; max value
+
+]
+
+---
+
+# Land similarity
+
+.pull-left[
+
+![](pic6.png)
+
+]
+
+.pull-right[
+
+Compares different geographical layers 
+
+- Assesses to what  extent each pixel is similar to a reference point ~ distance. 
+
+Two methods:
+
+  - Mahalanobis similarity: assess the distance by measuring how many standard deviations away a given value is away from the reference point. 
+  
+  - Multivariate Environmental Similarity Surfaces (MESS): uses an index that compares the value of a point in space with the distribution of the reference points. 
+
+]
+---
+
+# Land statistics
+
+.pull-left[
+
+![](pic7.png)
+
+]
+
+.pull-right[
+
+- How big is the suitable area?
+
+- How many people live in it?
+
+- What is the average cattle density?
+
+]
+
+---
+
+# System availability
+
+- Global;
+
+- Countries.
+
+---
+
+# Use cases
+- The tool is ideal for the use by:
+
+  - Students;
+  
+  - Educators; 
+  
+  - Development practitioners.
+
+---
+
+# Pan-Africa Bean Research Alliance (PABRA)
+
+.center[
+
+![](pic8.png)
+
+]
+
+---
+
+# Suitability of Forages in Tanzania 
+
+.center[
+
+![](pic9.png)
+
+]
+
+---
+
+# How can you contribute
+
+- Report use cases
+
+--
+
+- File issues/ report a bug via [GitHub](https://github.com/CIAT/targeting_tools_10_3)
+
+--
+
+- Feature request
+
+--
+
+- Pull request 
+
+---
+
+class: dv, center, middle
+
+# Thank you!
+
+---
+
+class: dv, center, middle
+
+# Questions?
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"slideNumberFormat": "",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
