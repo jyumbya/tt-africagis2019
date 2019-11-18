@@ -103,7 +103,7 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ---
 
-# Web interface
+# Web interface <https://targetingtools.ciat.cgiar.org/>
 
 ![](tt.png)
 
@@ -217,7 +217,7 @@ Two methods:
 
 # How can you contribute
 
-- Report use cases
+- Report use cases <https://targetingtools.ciat.cgiar.org/>
 
 --
 
