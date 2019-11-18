@@ -65,7 +65,7 @@ knitr::opts_chunk$set(warning = FALSE,
 
 - Runs on Python
 
-  -Targeting toolbox is an ArcGIS toolbox (.pyt) purely developed using Python programming language, ArcPy library.
+  - Targeting toolbox is an ArcGIS toolbox (.pyt) purely developed using Python programming language, ArcPy library.
 
 - Toolbox tools
 
@@ -100,6 +100,12 @@ knitr::opts_chunk$set(warning = FALSE,
 ![](pic4.png)
 
 ]
+
+---
+
+# Web interface
+
+![](tt.png)
 
 ---
 
