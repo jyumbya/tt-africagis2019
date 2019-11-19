@@ -2,7 +2,7 @@
 title: "Targeting Tools version 1.0"
 subtitle: ""
 author: "John Mutua & An Notenbaert"
-institute: ""
+institute: "AfricaGIS 2019 Conference, Kigali, Rwanda"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
