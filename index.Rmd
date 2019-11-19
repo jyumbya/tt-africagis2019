@@ -34,6 +34,7 @@ knitr::opts_chunk$set(warning = FALSE,
 .center[
 
 ![](site.png)
+Image credit: [Neil Palmer]
 
 ]
 
@@ -243,6 +244,5 @@ class: dv, center, middle
 
 ---
 
-class: dv, center, middle
-
-# Questions?
+background-image: url("ciat_end.png")
+background-size: cover
